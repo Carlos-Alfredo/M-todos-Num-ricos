@@ -1,0 +1,16 @@
+x0=0.6
+x1=0.62
+x2=0.64
+fx0=20
+fx1=50
+fx2=60
+h0=x1-x0
+h1=x2-x1
+l0=(fx1-fx0)/(x1-x0)
+l1=(fx2-fx1)/(x2-x1)
+a=(l1-l0)/(h1+h0)
+b=a*h1+l1
+c=fx2
+resposta=(-2*c)/(b+(b*b-4*a*c)**0.5)
+resposta=resposta+x2
+print(resposta)
